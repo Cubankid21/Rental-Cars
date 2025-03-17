@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vativu Proprietor - Safe Travel Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-black p-4">
+        <div class="container mx-auto flex flex-col items-center justify-center">
+            <img src="images/logo.png" alt="Vativu Logo" class="h-16 mb-2">
+            <button class="lg:hidden absolute right-4 top-4">
+                <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24"></svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-black text-white min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('images/BMW\ LP.png');">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center" style="margin-top: -290px;">
+                <h1 class="text-6xl md:text-7xl font-bold mb-8 translate-y-20 opacity-0 animate-slideUp" style="animation: slideUp 1s ease-out 0.5s forwards;">
+                    We are looking to serve people a safe travel.
+                </h1>
+                <div class="text-4xl md:text-5xl mt-6">
+                    <span class="text-blue-400 font-medium translate-y-20 opacity-0 animate-slideUp" style="animation: slideUp 1s ease-out 1s forwards;">
+                        Safety is our Priority
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-black opacity-0 animate-fadeIn" style="animation: fadeIn 1.5s ease-out forwards;"></div>
+        <img src="images/BMW LP.png" alt="Luxury Car" class="absolute inset-0 w-full h-full object-contain -z-10 scale-110 opacity-0 animate-zoomFade" style="animation: zoomFade 2s ease-out forwards;">
+    </section>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomFade {
+            from {
+                transform: scale(1.1);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+    <!-- Services Section -->
+    <section class="py-16 bg-gradient-to-b from-white to-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-4">Our Services & Benefits</h2>
+            <p class="text-center text-gray-600 mb-12">Experience premium travel solutions tailored to your needs</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold mb-2 text-gray-800">Day/Hourly Rental Service</p>
+                    <p class="text-gray-600">Flexible rental options for your convenience</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold mb-2 text-gray-800">Travel Packages for Outstation</p>
+                    <p class="text-gray-600">Comprehensive travel solutions</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold mb-2 text-gray-800">Airport Pickup & Drop</p>
+                    <p class="text-gray-600">Reliable airport transfer services</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"/>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold mb-2 text-gray-800">Wedding & Corporate</p>
+                    <p class="text-gray-600">Special occasion transportation</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <p class="text-xl font-semibold mb-2 text-gray-800">Employee Transport</p>
+                    <p class="text-gray-600">Safe and reliable staff commute</p>
+                </div>
+            </div>
+            <!-- Vehicle Categories -->
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">TOURS ALL OVER IN</h2>
+                <p class="text-lg md:text-xl text-blue-600 font-semibold">TAMILNADU • KERALA • KARNATAKA</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 mb-12">
+                <div class="bg-[#1C83C5] text-white p-4 md:p-6 text-center rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div class="h-16 md:h-24 flex items-center justify-center mb-2 md:mb-4">
+                        <img src="images/suv-red 1.png" alt="SUV" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                    </div>
+                    <span class="text-base md:text-lg font-semibold">SUV</span>
+                </div>
+                <div class="bg-[#1C83C5] text-white p-4 md:p-6 text-center rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div class="h-16 md:h-24 flex items-center justify-center mb-2 md:mb-4">
+                        <img src="images/sedan-red 2.png" alt="Sedan" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                    </div>
+                    <span class="text-base md:text-lg font-semibold">Sedan</span>
+                </div>
+                <div class="bg-[#1C83C5] text-white p-4 md:p-6 text-center rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div class="h-16 md:h-24 flex items-center justify-center mb-2 md:mb-4">
+                        <img src="images/tempo.png" alt="Tempo" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                    </div>
+                    <span class="text-base md:text-lg font-semibold">Tempo</span>
+                </div>
+                <div class="bg-[#1C83C5] text-white p-4 md:p-6 text-center rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div class="h-16 md:h-24 flex items-center justify-center mb-2 md:mb-4">
+                        <img src="images/hatchback.png" alt="Hatchback" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                    </div>
+                    <span class="text-base md:text-lg font-semibold">Hatchback</span>
+                </div>
+                <div class="bg-[#1C83C5] text-white p-4 md:p-6 text-center rounded-lg flex flex-col items-center justify-center transform hover:scale-105 transition-transform duration-300 shadow-md">
+                    <div class="h-16 md:h-24 flex items-center justify-center mb-2 md:mb-4">
+                        <img src="images/coach vehicle.png" alt="Coach Vehicles" class="w-16 h-16 md:w-20 md:h-20 object-contain">
+                    </div>
+                    <span class="text-base md:text-lg font-semibold">Coach Vehicles</span>
+                </div>
+            </div>
+            <!-- Vehicle Cards -->
+            <div class="container mx-auto px-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+                    <!-- Sedan Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/sedan.png" alt="Sedan" class="absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl font-bold mb-3">SEDAN</h3>
+                            <div class="text-3xl font-bold mb-6">₹1700<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹10/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span>Driver Bata ₹300</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Innova Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/innova.png" alt="Innova" class="absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">INNOVA</h3>
+                            <div class="text-3xl font-bold mb-4">₹2000<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹12/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span>Driver Bata ₹300</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Innova Crysta Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/innova crysta.png" alt="Innova Crysta" class="absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">INNOVA CRYSTA</h3>
+                            <div class="text-3xl font-bold mb-4">₹2500<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹14/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                 
+                                    <span>Driver Bata ₹500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tempo Traveller Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/tempotraveller.png" alt="Tempo Traveller" class="absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">TEMPO TRAVELLER</h3>
+                            <div class="text-3xl font-bold mb-4">₹3000<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹16/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                
+                                    <span>Driver Bata ₹300</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coach 21 Seater -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/Coach21.png" alt="21 Seater Coach" class="absolute inset-0 w-[120%] h-[120%] object-contain p-4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">COACH 21 SEATER</h3>
+                            <div class="text-3xl font-bold mb-4">₹3500<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹18/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                   
+                                    <span>Driver Bata ₹500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coach 35 Seater -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-duration-300">
+                        <div class="relative h-48">
+                            <img src="images/25coach.png" alt="35 Seater Coach" class="absolute inset-0 w-full h-full object-contain p-4">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">COACH 35 SEATER</h3>
+                            <div class="text-3xl font-bold mb-4">₹4000<span class="text-sm font-normal">/day</span></div>
+                            <div class="flex justify-between text-sm text-gray-600">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                    </svg>
+                                    <span>₹20/KM</span>
+                                </div>
+                                <div class="flex items-center">
+                                
+                                    <span>Driver Bata ₹500</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Booking Section -->
+            </div>
+            <div class="w-full h-[260px] bg-black text-white flex flex-col items-center justify-center space-y-8 relative">
+             
+                <!-- Content -->
+                <div class="relative z-10 text-center">
+                    <h2 class="text-4xl font-bold">BOOK OUR VEHICLES THROUGH</h2>
+                    <div class="flex justify-center space-x-8 mt-8">
+                        <div class="flex items-center">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-xl mt-8">Online booking and Mobile apps - Coming soon!</p>
+                </div>
+            </div>
+<!-- Footer Section -->
+<footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-4 md:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Information -->
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+                <div class="space-y-4">
+                    <p class="flex items-center justify-center md:justify-start flex-wrap">
+                        <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span class="inline-block">103,GRC Arun Apartment, Amarjothi Saroj Nagar Thudiyalur, Coimbatore.</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start">
+                        <svg class="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>+91 96004 42275</span>
+                    </p>
+                </div>
+            </div>
+            <!-- Social Media Links -->
+            <div class="flex justify-center md:justify-end items-center space-x-6">
+                <a href="#" class="text-white hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-blue-600 transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-red-600 transition-colors duration-300">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+            <p>&copy; 2024 Vativu Proprietor. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+          
